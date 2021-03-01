@@ -12,7 +12,7 @@ export const SidebarData = [
     {
         title: 'User Profile',
         path: '/userprofile',
-        icon: <AiIcons.AiFillProfile style={{fontSize:'25px'}}/>,
+        icon: <IoIcons.IoIosPeople style={{fontSize:'25px'}}/>,
         cName: 'nav-text'
     },
     {

@@ -5,29 +5,26 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from './NavbarData'
 import './Navbar.css';
 import { IconContext } from 'react-icons'
+import * as IoIcons from 'react-icons/io';
 
 
 
-function Navbar() {
+const Navbar = ({handleLogout}) => {
     const [sidebar, setsidebar] = useState(false);
 
     const showSidebar = () => setsidebar(!sidebar);
+    
     return (
         <>
         <IconContext.Provider value={{color: '#fff'}}>
         <div className="navbar">
          <Link to="#" className="menu-bars">
-            <FaIcons.FaBars onClick={showSidebar} className="cross_icon" style={{color:'#000'}}/>
-            
-             
+            <FaIcons.FaBars onClick={showSidebar} className="cross_icon" style={{color:'#000'}}/>  
          </Link>
+         <IoIcons.IoIosLogOut  onClick={handleLogout} style={{fontSize:'36px', position:'absolute', top:'29px', right:'16px', color:'#000'}}/>
+         
          <div className="nav_heading">
-         {/* {SidebarData.map((item, index) => {
-                    return(   
-                    <h3 key={index} style={{position:'absolute', top:'14px', fontSize:'25px'}}>{item.title}</h3>
-                    // <h3  style={{position:'absolute', top:'18px', fontSize:'27px'}}>DashBoard</h3>
-                    )
-                })} */}
+         
          </div>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

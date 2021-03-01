@@ -1,25 +1,27 @@
 import React from 'react'
 import * as AiIcons from "react-icons/ai";
 import Chart from "react-google-charts";
-import { Card, ListGroup } from "react-bootstrap";
-import AccessTimeIcon from "@material-ui/icons/AccessTime";
-import RestoreIcon from "@material-ui/icons/Restore";
+import { Card, ListGroup, Button } from "react-bootstrap";
+import * as IoIcons from 'react-icons/io';
 import '../pages/Dashboard.css'
 
-function Dashboard() {
+
+const Dashboard = ({handleLogout}) => {
+  
     return (
         <div className='dashboard'>
+             <div className="dashboard_button" style={{display:'flex'}}>
              <h3  style={{position:'absolute', top:'27px', fontSize:'29px', left:'78px'}}>Dashboard<AiIcons.AiFillDashboard style={{fontSize:'20px', color:'#fff', marginLeft:'5px'}}/></h3>
+             
+             
+   
+              
+             </div>
              <div className="dash-container">
       <div className="dash-content">
         <div className="piech">
           <Card className="dash-card-1">
-            {/* <Card.Header>
-              <Card.Title>Email statistics</Card.Title>
-              <Card.Subtitle className="text-muted">
-                Last Campaign Performance
-              </Card.Subtitle>
-            </Card.Header> */}
+           
             <ListGroup variant="flush">
               <ListGroup.Item className="chart-padding">
                 <Chart
