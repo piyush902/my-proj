@@ -1,0 +1,44 @@
+/*---------------------------------------
+   CONTACT FORM             
+-----------------------------------------*/
+.form-control {
+    border: 1px solid #e5e6e9;
+    border-radius: 0;
+    height: 48px;
+    padding-left: 18px;
+    font-size: 14px;
+    background: transparent;
+}
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+form {
+    padding: 10px 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.btn-custom {
+    background: rgb(149, 146, 146);
+    border: 0px;
+}
+.btn-custom:hover {
+    background: rgb(87, 86, 86);
+    border: 0px;
+}
+.table-data-form {
+    margin-top: 25px;
+}
+.form-group textarea {
+    height: 100px;
+}
+.contact-table {
+    margin-top: 100px;
+}
+@media screen and (max-width: 1279px) {
+	/*Navigation CSS*/
+	.table {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+	}
+}
